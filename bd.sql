@@ -12,6 +12,6 @@ CREATE TABLE `usuarios` (
   PRIMARY KEY (`id`)
 );
 
-INSERT INTO usuario (matricula, nombre, apellidos, email) VALUES ('01088197','Rafael','Garcia','rafa@correo.com');
-INSERT INTO usuario (matricula, nombre, apellidos, email) VALUES ('01087554','Humberto','Garza','guayon@correo.com');
-INSERT INTO usuario (matricula, nombre, apellidos, email) VALUES ('01082171','Alan','Gandara','elalan@correo.com');
+INSERT INTO usuarios (matricula, nombre, apellidos, email) VALUES ('01088197','Rafael','Garcia','rafa@correo.com');
+INSERT INTO usuarios (matricula, nombre, apellidos, email) VALUES ('01087554','Humberto','Garza','guayon@correo.com');
+INSERT INTO usuarios (matricula, nombre, apellidos, email) VALUES ('01082171','Alan','Gandara','elalan@correo.com');
