@@ -1,3 +1,4 @@
+<?
 class Usuario {
 	private $matricula;
 	private $nombre;
@@ -55,3 +56,4 @@ class Usuario {
 
 
 }
+?>

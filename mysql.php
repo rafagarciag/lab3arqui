@@ -1,3 +1,4 @@
+<?
 class MySQL{
 
 	private $resultado;
@@ -38,4 +39,10 @@ class MySQL{
 		}
 		return $rows;
 	}
+	
+	public function insert($params,$table){
+		$sql='INSERT INTO '.$table.' ('.implode(',',array_keys($params)).') VALUES (''.implode("','",array_values($params)).'')';
+		$this->query($sql);
+	}
 }
+?>
