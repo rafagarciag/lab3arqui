@@ -75,8 +75,15 @@ class Usuario extends MySQL {
 	
 	// Traer todo un renglon 
 	public function fetch($id){
-		if(!$row=mysql_query("SELECT * FROM $this->tabla WHERE id='$id'")){
+		if(!$row= query("SELECT * FROM $this->tabla WHERE id='$id'")){
 			throw new Exception('Error en el fetch');
+		}
+		else{
+		
+			$row = fetchRow();
+			
+		//if(!$row=mysql_query("SELECT * FROM $this->tabla WHERE id='$id'")){
+			//throw new Exception('Error en el fetch');
 		}
 	return $row;
 	}
