@@ -101,7 +101,7 @@ class Usuario extends MySQL {
 	
 	// Eliminar renglon
 	public function delete($id){
-		if(!mysql_query("DELETE FROM $this->tabla WHERE id='$id'")){
+		if(!mysql_query("DELETE FROM $this->tabla WHERE matricula='$id'")){
 			throw new Exception('Error eliminando');
 		}
 	}
