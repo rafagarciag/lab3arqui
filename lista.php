@@ -49,13 +49,13 @@
 					<? echo $resultado['email'] ?>
 				</td>
 				<td>
-					<input type="button" value="Ver"/>
+					<input type="button" value="Ver" onClick="window.location.href='show.php?matricula=<?echo $resultado['matricula']?>'"/>
 				</td>
 				<td>
-					<input type="button" value="Editar"/>
+					<input type="button" value="Editar" onClick="window.location.href='editar.php?matricula=<?echo $resultado['matricula']?>'"/>
 				</td>
 				<td>
-					<input type="button" value="Eliminar"/>
+					<input type="button" value="Eliminar" onClick="window.location.href='eliminar.php?matricula=<?echo $resultado['matricula']?>'"/>
 				</td>
 				
 			</tr>
