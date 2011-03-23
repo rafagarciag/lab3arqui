@@ -94,9 +94,7 @@ class Usuario extends MySQL {
 	
 	// Hacer update
 	public function update($id){
-		if(!mysql_query("UPDATE $this->tabla SET matricula='$this->matricula',nombre='$this->nombre,apellidos=$this->apellidos,email=$this->email WHERE id='$id'")){
-			throw new Exception('Error en el update');
-		}
+		mysql_query("UPDATE $this->tabla SET matricula='$this->matricula',nombre='$this->nombre,apellidos=$this->apellidos,email=$this->email WHERE matricula='$id'");
 	}
 	
 	// Eliminar renglon
