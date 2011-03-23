@@ -13,8 +13,10 @@
 	$nuevo->setMatricula($matricula);
 	$nuevo->setEmail($email);
 	
-	$nuevo->update($matricula);
+	$nuevo->update();
 	
 	echo "ACTUALIZANDO USUARIO $matricula";
 	
 ?>
+<br/>
+<input type="button" value="Regresar" onClick="window.location.href='lista.php'"/>

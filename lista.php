@@ -62,11 +62,10 @@
 			<?
 			}
 			?>
-			<!--Termina el for-->
 				
 		
 		</table>
-		
+		<input type="button" value="Nuevo Usuario" onClick="window.location.href='crear.html'"/>
 		
 	</body>
 

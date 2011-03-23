@@ -93,8 +93,10 @@ class Usuario extends MySQL {
 	}
 	
 	// Hacer update
-	public function update($id){
-		mysql_query("UPDATE $this->tabla SET matricula='$this->matricula',nombre='$this->nombre,apellidos=$this->apellidos,email=$this->email WHERE matricula='$id'");
+	public function update(){
+		$quer = "UPDATE $this->tabla SET matricula='$this->matricula',nombre='$this->nombre' ,apellidos='$this->apellidos',email='$this->email' WHERE matricula='$this->matricula'";
+		mysql_query($quer);
+		echo $quer;
 	}
 	
 	// Eliminar renglon

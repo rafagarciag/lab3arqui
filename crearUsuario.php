@@ -14,6 +14,7 @@ try{
 	$nuevo->setEmail($email);
 	$nuevo->insert();
 	echo "Se ha creado el usuario";
+	
 	//$bd->insert(array('nombre'=>$nombre, 'apellidos'=>$apellidos, 'matricula'=>$matricula, 'email'=>$email), 'usuarios');
 
 }
@@ -22,3 +23,5 @@ catch(Exception $e){
 	exit();
 }
 ?>
+<br/>
+<input type="button" value="Regresar" onClick="window.location.href='lista.php'"/>
