@@ -1,7 +1,7 @@
 <?
 class MySQL{
 
-	private $resultado;
+	public $resultado;
 	
 	//para conectarse a la base de datos y seleccionar una base de datos
 	public function __construct($host='localhost',$user='root',$password='admin',$database='arqui_lab'){
@@ -75,17 +75,14 @@ class Usuario extends MySQL {
 	
 	// Traer todo un renglon 
 	public function fetch($id){
-		if(!$row= query("SELECT * FROM $this->tabla WHERE id='$id'")){
-			throw new Exception('Error en el fetch');
-		}
-		else{
+		$row = $this->query("SELECT * FROM $this->tabla WHERE id='$id'");
 		
-			$row = fetchRow();
+		$row = $this->fetchRow();
 			
 		//if(!$row=mysql_query("SELECT * FROM $this->tabla WHERE id='$id'")){
 			//throw new Exception('Error en el fetch');
-		}
-	return $row;
+		
+		return $row;
 	}
 	
 	// insertar un renglon nuevo

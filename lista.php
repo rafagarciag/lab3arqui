@@ -9,7 +9,7 @@
 	
 		<h2>Lista de Usuarios</h2>
 		
-		<table border="1">
+		<table>
 			<tr>
 				<th>
 					Matricula
@@ -47,6 +47,15 @@
 				</td>
 				<td>
 					<? echo $resultado['email'] ?>
+				</td>
+				<td>
+					<input type="button" value="Ver"/>
+				</td>
+				<td>
+					<input type="button" value="Editar"/>
+				</td>
+				<td>
+					<input type="button" value="Eliminar"/>
 				</td>
 				
 			</tr>
