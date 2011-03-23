@@ -1,3 +1,3 @@
 <?
-    header("lista.php")
+    header('lista.php');
 ?>
