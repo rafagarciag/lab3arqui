@@ -26,21 +26,33 @@
 			<tr/>
 
 			<!--Aqui va el for-->
+			<?php
+			require('usuario.php');
+			$bd = new MySQL('localhost', 'root', 'admin', 'arqui_lab');
+			
+			$arreglo = $bd->fetchAll('usuarios');
+		
+			foreach($arreglo as $resultado){
+			
+			?>
 			<tr>
 				<td>
-					Matricula!!
+					<? echo $resultado['matricula'] ?>
 				</td>
 				<td>
-					Nombre!!
+					<? echo $resultado['nombre'] ?>
 				</td>
 				<td>
-					Apellidos!!
+					<? echo $resultado['apellidos'] ?>
 				</td>
 				<td>
-					Email!!
+					<? echo $resultado['email'] ?>
 				</td>
 				
 			</tr>
+			<?
+			}
+			?>
 			<!--Termina el for-->
 				
 		

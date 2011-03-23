@@ -17,7 +17,7 @@ class MySQL{
 	
 	//para hacer una query
 	public function query($query){
-		if(!$this->reultado=mysql_query($query)){
+		if(!$this->resultado=mysql_query($query)){
 			throw new Exception('Error al intentar hacer la query: '.$query);
 		}
 	}
@@ -31,7 +31,7 @@ class MySQL{
 	}
 	
 	//regresa un arreglo con todas las tuplas
-	public function fetchAll($tabla='usuarios'){
+	public function fetchAll($tabla){
 		$this->query('SELECT * FROM '.$tabla);
 		$rows=array();
 		while($row=$this->fetchRow()){
