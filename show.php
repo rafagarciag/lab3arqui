@@ -9,7 +9,7 @@
 	
 		<h2>Usuario</h2>
 		<?php
-			$id=$_GET['id'];
+			$id=$_GET['matricula'];
 			require('usuario.php');
 			$bd = new MySQL('localhost', 'root', 'admin', 'arqui_lab');
 			$nuevo = new Usuario();

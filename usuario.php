@@ -75,7 +75,7 @@ class Usuario extends MySQL {
 	
 	// Traer todo un renglon 
 	public function fetch($id){
-		$row = $this->query("SELECT * FROM $this->tabla WHERE id='$id'");
+		$row = $this->query("SELECT * FROM $this->tabla WHERE matricula='$id'");
 		
 		$row = $this->fetchRow();
 			
